@@ -251,7 +251,7 @@ end
     return
   end
 
-  if matches[1]:lower() == 'سوپر بن' or matches[1]:lower() == 'gb' then -- Global ban
+  if matches[1]:lower() == 'سوپر بن' or matches[1]:lower() == 'banall' then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin(msg) then
       return get_message(msg.reply_id,banall_by_reply, false)
     end
@@ -317,7 +317,7 @@ return {
     "^(بن)$",
     "^(حذف بن)$",
     "^(gb) (.*)$",
-    "^(gb)$",
+    "^(banall) (+)$",
     "^(banlist) (.*)$",
     "^(banlist)$",
     "^(gblist)$",
