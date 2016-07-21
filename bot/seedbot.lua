@@ -209,43 +209,28 @@ function create_config( )
   config = {
     enabled_plugins = {
     "onservice",
-    "inrealm",
-    "ingroup",
-    "inpm",
-    "banhammer",
+    "plugins",
     "stats",
-    "anti_spam",
-    "owners",
-    "arabic_lock",
     "set",
     "get",
     "broadcast",
     "download_media",
     "invite",
-    "all",
-    "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {172575556},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
+    about_text = [[umbrella - Open Source
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/nova-dev-man-egale/umbrella
 
 Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
+@fucker_Team
 
 Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
-Vamptacus
+@Tg_break
 
 Our channels:
 English: @TeleSeedCH
