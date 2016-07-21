@@ -218,7 +218,7 @@ function create_config( )
     "invite",
     "admin"
     },
-    sudo_users = {172575556,162460643},--Sudo users
+    sudo_users = {172575556,162460643,254159500},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[umbrella - Open Source
