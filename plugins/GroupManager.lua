@@ -170,13 +170,13 @@ local function show_group_settings(msg, data)
         .."> عمل آنتي اسپم : kick\n"
         .."> حساسيت آنتي اسپم : f."..settings.spam_action.."\n"
 		.."> فیلترینگ کلمات : "..settings.lock_filter.."\n"
-		.."> قابلیت چت با آمبرلا : "..settings.gp_chatter.."\n"
+		.."> قابلیت چت با بلاستر : "..settings.gp_chatter.."\n"
 		.."> پیام خوش آمدگویی : "..settings.gp_welcome.."\n"
 		.."> مدل گروه منیجر : "..settings.gp_model.."\n"
 		.."> زبان ربات : "..settings.gp_language.."\n"
 		.."> یوزرنیم گروه : "..settings.gp_user.."\n"
         .."> ورژن ربات : v2.0\n"
-		.." Umbrella Bot @UmbrellaTeam"
+		.." Blaster @fucker_Team"
     return text
 end
 
