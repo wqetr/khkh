@@ -1,7 +1,7 @@
 do
 local function create_group(msg)
     if not is_sudo(msg) then
-        return "ساخت گروه کاملا رایگان بوده است برای دریافت به ایدی @nova_Robot مراجعه کنید\nhttp://\n\nsudo: @nethall"
+        return "ساخت گروه کاملا رایگان بوده است برای دریافت به ایدی @nova_Robot مراجعه کنید"
     end
     local group_creator = msg.from.print_name
     create_group_chat (group_creator, group_name, ok_cb, false)
