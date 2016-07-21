@@ -58,12 +58,12 @@ return {
 	..'<tr><td align="center">/bot on</td><td align="right">فعال سازی مجدد ربات در گروه</td></tr>',
 	usage = {
 	moderator = {
-		"/bot on|off : خاموش-روشن کردن ربات",
+		"bot on|off : خاموش-روشن کردن ربات",
 	},
 	},
 	patterns = {
-		"^/bot? (on)",
-		"^/bot? (off)" }, 
+		"^bot? (on)",
+		"^bot? (off)" }, 
 	run = run,
 	--privileged = true,
 	moderated = true,
