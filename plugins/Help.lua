@@ -98,7 +98,7 @@ end
 
 local function telegram_help()
 	local i = 0
-	local text = "ليست ابزارهاي آمبرلا:\n______________________________\n"
+	local text = "ابزارهاي بلاستر:\n______________________________\n"
 	for name in pairsByKeys(plugins) do
 		if plugins[name].hidden then
 			name = nil
