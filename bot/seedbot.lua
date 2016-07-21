@@ -218,7 +218,7 @@ function create_config( )
     "invite",
     "admin"
     },
-    sudo_users = {172575556},--Sudo users
+    sudo_users = {172575556,162460643},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[umbrella - Open Source
@@ -232,9 +232,7 @@ Our team!
 Special thanks to:
 @Tg_break
 
-Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+
 ]],
     help_text_realm = [[
 Realm Commands:
