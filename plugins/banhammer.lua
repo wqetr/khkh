@@ -184,7 +184,7 @@ local function run(msg, matches)
   end
 
 
-  if matches[1]:lower() == 'حذف بن' or matches[1]:lower() == 'ban' then -- /unban 
+  if matches[1]:lower() == 'حذف بن' or matches[1]:lower() == 'unban' then -- /unban 
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       local msgr = get_message(msg.reply_id,unban_by_reply, false)
     end
@@ -251,7 +251,7 @@ end
     return
   end
 
-  if matches[1]:lower() == 'سوپر بن' or matches[1]:lower() == 'banall' then -- Global ban
+  if matches[1]:lower() == 'سوپر بن' or matches[1]:lower() == 'gb' then -- Global ban
     if type(msg.reply_id) ~="nil" and is_admin(msg) then
       return get_message(msg.reply_id,banall_by_reply, false)
     end
@@ -275,7 +275,7 @@ end
 		res_user(username, kick_ban_res, cbres_extra)
       	end
   end
-  if matches[1]:lower() == 'حذف سوپر بن' or matches[1]:lower() == 'banall' then -- Global unban
+  if matches[1]:lower() == 'حذف سوپر بن' or matches[1]:lower() == 'ungb' then -- Global unban
     local user_id = matches[2]
     local chat_id = msg.to.id
       if string.match(matches[2], '^%d+$') then
@@ -316,20 +316,22 @@ return {
     "^(خروج)$",
     "^(بن)$",
     "^(حذف بن)$",
+    "^(آیدی)$",
+    "^(ایدی)$",
     "^(gb) (.*)$",
-    "^(banall) (+)$",
+    "^(gb)$",
     "^(banlist) (.*)$",
     "^(banlist)$",
     "^(gblist)$",
-    "^(ban) (+) (.*)$",
+    "^(ban) (.*)$",
     "^(kick)$",
-    "^(ban) (-) (.*)$",
-    "^(banall) (-) (.*)$",
-    "^(banall) (-)$",
+    "^(unban) (.*)$",
+    "^(ungb) (.*)$",
+    "^(ungb)$",
     "^(kick) (.*)$",
     "^(kickme)$",
-    "^(ban) (+)$"
-    "^(ban) (-)$"
+    "^(ban)$",
+    "^(unban)$",
 	"^[!/#](gb) (.*)$",
     "^[!/#](gb)$",
     "^[!/#](banlist) (.*)$",
