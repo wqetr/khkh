@@ -3,7 +3,7 @@ local function run(msg, matches)
 		local dat = https.request("https://api.github.com/repos/"..matches[2])
 		local jdat = JSON.decode(dat)
 		if jdat.message then
-			return "آدرس وارد شده صحیح نیست به این صورت وارد کنید:\ngithub username/project\ngithub shayan-soft/umbrella"
+			return "آدرس وارد شده صحیح نیست به این صورت وارد کنید:\ngithub username/project\ngithub.com/nova-dev-man-egale/umbrella"
 		end
 		local base = "curl 'https://codeload.github.com/"..matches[2].."/zip/master'"
 		local data = io.popen(base):read('*all')
@@ -15,7 +15,7 @@ local function run(msg, matches)
 		local dat = https.request("https://api.github.com/repos/"..matches[2])
 		local jdat = JSON.decode(dat)
 		if jdat.message then
-			return "آدرس وارد شده صحیح نیست به این صورت وارد کنید:\ngithub username/project\ngithub shayan-soft/umbrella"
+			return "آدرس وارد شده صحیح نیست به این صورت وارد کنید:\ngithub username/project\ngithub nova-dev-man-egale/umbrella"
 		end
 		local res = https.request(jdat.owner.url)
 		local jres = JSON.decode(res)
