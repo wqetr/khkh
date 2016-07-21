@@ -270,7 +270,7 @@ local function admin_list(msg)
 	if next(data['admins']) == nil then
 		return 'گلوبال ادمين وجود ندارد'
 	end
-	local message = 'گلوبال ادمینهای ربات آمبرلا:\n______________________________\nSudo : @nethall (172575556)\n'
+	local message = ' ادمینهای ربات بلاستر:\n______________________________\nSudo : @nethall (172575556)\n'
 	i=1
 	for k,v in pairs(data['admins']) do
 		message = message..i..'- @'.. v ..' ('..k..')\n'
